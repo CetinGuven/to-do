@@ -1,7 +1,6 @@
 
 
 <?php
-//burayı hiç anlamadım 
 
 include ("db.php");
 include ("response.php");
