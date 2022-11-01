@@ -17,7 +17,7 @@ $query->execute();
     while($row=$query->fetch(PDO::FETCH_ASSOC) ){
         // $data obje tipinde ayarlanacak ve her veriye uygun bir field belirlenecek
 
-        response( $row["id"]. " ".$row["title"]." ".$row["date_time"]." ".$row["status"],true,true);
+        response( $row["title"]." ".$row["date_time"]." ".$row["status"],true,true);
 
        //echo $row["id"]. " ".$row["title"]." ".$row["date_time"]." ".$row["status"]."<br>";
 
