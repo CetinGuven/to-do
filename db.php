@@ -3,7 +3,7 @@
 $host = "localhost";
 $dbname = "todolist";
 $db_username = "root";
-$db_password = "A12345678";
+$db_password = ""; //You have to write database password.
 
 try {
     $db = new PDO(
