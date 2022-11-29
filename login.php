@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "db.php"; //Connect to database
 include "response.php";
 
 $json = file_get_contents("php://input");
