@@ -17,12 +17,7 @@ $query->execute();
     while($row=$query->fetch(PDO::FETCH_ASSOC) ){
        
         response( $row["title"]." ".$row["date_time"]." ".$row["status"],true,true);
-
-       /
     }
-
-
-     
-
+  
 ?>
 
