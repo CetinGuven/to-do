@@ -9,7 +9,7 @@ $email = $data->email;
 $password = $data->password;
 
 if (!isset($email) || (!isset($password) && $email == "") || $password == "") {
-    response(false, "Lütfen boş bırakmayınız", false);
+    response(false, "Please do not leave blank.", false);
 }
 
 $query = $db->query(
@@ -18,7 +18,7 @@ $query = $db->query(
 $query->execute();
 
 if ($query->rowCount() < 1) {
-    response(false, "Email veya şifre yanlış", false);
+    response(false, "Email or password is incorrect", false);
 
 
 } else {
@@ -26,7 +26,7 @@ if ($query->rowCount() < 1) {
     $user = $query->fetch(PDO::FETCH_OBJ);
     $_SESSION["Id"] = $user->id;
     $_SESSION["Email"] = $user->email;
-    response($_SESSION["Id"], "hoşgeldin tatlım", true);
+    response($_SESSION["Id"], "Welcome", true);
 }
 ?>
  
